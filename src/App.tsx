@@ -1,33 +1,50 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+    <div className="popup">
+        <div className='popup-content'>
+
+          <div className="page">
+            <span>All pages</span>
+            <input type="checkbox" id="c0" name="cc" />
+            <label htmlFor="c0"><span><span></span></span></label>
+          </div>
+
+          <hr/>
+
+          <div>
+          <div className="page">
+            <span>Page 1</span>
+              <input type="checkbox" id="c1" name="cc" />
+              <label htmlFor="c1"><span><span></span></span></label>
+            </div>
+            <div className="page">
+              <span>Page 2</span>
+              <input type="checkbox" id="c2" name="cc" />
+              <label htmlFor="c2"><span><span></span></span></label>
+            </div>
+            <div className="page">
+              <span>Page 3</span>
+              <input type="checkbox" id="c3" name="cc" />
+              <label htmlFor="c3"><span><span></span></span></label>
+            </div>
+            <div className="page">
+              <span>Page 4</span>
+              <input type="checkbox" id="c4" name="cc" />
+              <label htmlFor="c4"><span><span></span></span></label>
+            </div>
+          </div>
+          
+          <hr/>
+
+          <button className="done-button">Done</button>
+
+        </div>
+    </div>
+
     </>
   )
 }
